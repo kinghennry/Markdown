@@ -1,0 +1,3 @@
+.dark-mode-icon--active path {
+    fill: var(--color-100);
+}

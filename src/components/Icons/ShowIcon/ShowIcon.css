@@ -1,0 +1,11 @@
+.show-icon {
+  cursor: pointer;
+}
+
+.show-icon:hover path {
+  fill: var(--color-orange);
+}
+
+.show-icon--night path {
+  fill: var(--color-400);
+}

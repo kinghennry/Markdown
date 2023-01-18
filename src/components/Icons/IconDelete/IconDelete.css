@@ -1,0 +1,3 @@
+.icon-delete:hover path {
+  fill: var(--color-orange);
+}

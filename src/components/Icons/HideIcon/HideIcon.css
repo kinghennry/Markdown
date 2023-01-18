@@ -1,0 +1,11 @@
+.hide-icon {
+    cursor: pointer;
+}
+
+.hide-icon:hover path {
+    fill: var(--color-orange);
+}
+
+.hide-icon--night path {
+    fill: var(--color-400);
+}

@@ -1,0 +1,35 @@
+.document-tile {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.document-tile:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.document-tile:hover .document-tile__document-name {
+  color: var(--color-orange);
+}
+
+.document-tile__icon {
+  margin-right: 16px;
+  height: 16px;
+  width: 14px;
+}
+
+.document-tile__list {
+  list-style-type: none;
+}
+
+.document-tile__document-date {
+  color: var(--color-500);
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.document-tile__document-name {
+  font-size: 15px;
+  line-height: 18px;
+}

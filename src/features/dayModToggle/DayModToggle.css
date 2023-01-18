@@ -1,0 +1,33 @@
+.toggle {
+  appearance: none;
+  position: relative;
+  width: 48px;
+  height: 24px;
+}
+
+.toggle:before {
+  content: "";
+  width: 48px;
+  height: 24px;
+  background-color: var(--color-600);
+  border-radius: 14.5px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.toggle:after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-100);
+  border-radius: 50%;
+  right: 6px;
+  transform: translateY(50%);
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+.toggle:checked::after {
+  right: 30px;
+}

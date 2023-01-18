@@ -1,0 +1,100 @@
+.sidebar-container {
+  height: 0;
+  width: 0;
+  z-index: 2;
+}
+
+.sidebar-container--active {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.sidebar {
+  background-color: var(--color-900);
+  position: fixed;
+  left: -272px;
+  top: 0;
+  width: 250px;
+  padding: 27px 24px 88px 24px;
+  color: var(--color-100);
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  transition: all 0.3s;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  scrollbar-width: 0px;
+  z-index: 2;
+}
+
+.sidebar__wrapper {
+  position: relative;
+  min-height: 100%;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar--active {
+  left: 0;
+}
+
+.sidebar__title {
+  font-family: "Commissioner", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+
+.sidebar__my-documents {
+  color: var(--color-500);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+}
+
+.sidebar__button {
+  border: none;
+  color: var(--color-100);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 10px 44px 12px 44px;
+  background-color: var(--color-orange);
+  border-radius: 4px;
+  margin-bottom: 24px;
+  display: block;
+  -webkit-appearance: none;
+}
+
+.sidebar__button:hover {
+  background-color: var(--color-orange-hover);
+}
+
+.sidebar__toggle-block {
+  display: flex;
+  width: inherit;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  bottom: -56px;
+  justify-content: space-between;
+}
+
+@media (min-width: 800px) {
+  .sidebar__title {
+    display: none;
+  }
+}
